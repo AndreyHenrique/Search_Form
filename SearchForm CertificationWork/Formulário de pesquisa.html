@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeclaraMei</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Declaração Micro Empreendedor Individual</h1>
+
+    <p id="description">Preencha os dados para declarar seu imposto de renda</p>
+
+    <form id="survey-form">
+
+        <fieldset>
+        <label id="name-label" for="nome">Nome Completo
+            <input id="name" type="text" placeholder="Coloque seu Nome" required>
+        </label>
+
+        <label id="email-label" for="email">Email
+            <input id="email" type="email" placeholder="Coloque seu email" required>
+        </label>
+
+        <label id="number-label" for="number">Idade <i>(opcional)</i>
+            <input id="number" type="number" min="18" max="120" placeholder="Idade">
+        </label>
+
+        <label for="CPF">CPF
+            <input id="CPF" type="number" placeholder="Digite seu CPF" required>
+        </label>
+        </fieldset>
+
+        <label>Como ficou sabendo da gente?
+            <select name="dropdown" id="dropdown">
+                <option disabled selected value="">(selecione uma opção)</option>
+                <option value="1">Indicação</option>
+                <option value="2">Whatsapp</option>
+                <option value="3">Email</option>
+            </select>
+        </label>
+
+        <p class="clue">Qual o porte da sua empresa?</p>
+        <label>
+            <input class="inline-radio" name="porte-empresa" type="radio" value="mei">MEI
+            <input class="inline-radio" name="porte-empresa" type="radio" value="me">ME
+        </label>
+
+        <p class="clue">Quais tipos de serviço gostaria de fazer conosco?</p>
+        <label>
+            <input value="IRPJ" type="checkbox">Declaração anual pessoa jurídica
+            <input value="IRPF" type="checkbox">Declaração anual pessoa física
+            <input value="Parcelamento" type="checkbox">Parcelamento de darfs a pagar
+        </label>
+
+        <label><p class="clue">Alguma dúvida a mais? pode deixar na caixa de texto abaixo.</p>
+            <textarea name="" id="" cols="30" rows="10">
+            </textarea>
+        </label>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
